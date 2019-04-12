@@ -1,7 +1,9 @@
 module.exports = {
+    
     baseUrl: './',
     productionSourceMap: false,
     devServer: {
+        port: 3000,
         proxy: {
             '/api':{
                 target:'http://jsonplaceholder.typicode.com',
